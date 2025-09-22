@@ -1,12 +1,21 @@
 #include<stdio.h>
 int main()
 {
-	int a[]={10,20,30,40,50};
-	int size=sizeof(a)/sizeof(a[0]);
-	for(int i=0;i<size;i++)
-	{
-		printf("%d",a[i]);
-	}
-	printf("\n");
-	return 0;
+	int a[10];
+	int n,i;
+	printf("number of element in array: ");
+    scanf("%d",&n);
+    printf("enter %d element:\n",n);
+    for(i=0;i<n;i++)
+    {
+	     printf("element %d: ",i+1);
+		 scanf("%d",&a[i]);
+    }
+    printf("\nelement in array:\n ");
+    for(i=0;i<n;i++)
+    {
+	printf("element %d = %d\n",i,a[i]);
+    }
+    return 0;
 }
+
